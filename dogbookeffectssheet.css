@@ -1,0 +1,57 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.formulario,
+.registro-formulario,
+.Seccionprincial { 
+    animation: opacity 2s ;
+}
+
+@media (hover:hover) {
+    :root { 
+        --colorhover: rgb(253, 51, 0);
+        --colohover2:rgb(255, 177, 141);
+    }
+
+    .hover1:hover {
+        background: var(--colorhover);
+        animation: expand 1s infinite;
+     
+    }  
+    
+    .hover2:hover { 
+        color: var(--colohover2);
+        animation: expand 1s infinite;
+    }
+/*ANIMACIONES */
+    @keyframes zigzag {
+        0%{transform: translateX(0%);}
+        25%{transform: translateX(2%);}
+        50%{transform: translateX(-2%);}
+        75%{transform: translateX(0%);}
+        
+        
+    }
+    
+    @keyframes drop {
+        0% {transform: translateY(0);}
+        10% {transform: translateY(-2%);}
+        20% {transform: translateY(0);}
+    }
+
+    @keyframes expand {
+        0% {transform: scale(1);}
+        50% {transform: scale(1.025);}
+        100% {transform: scale(1);}
+        
+    }
+
+    @keyframes opacity {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+            
+    }
+}
+    
+   

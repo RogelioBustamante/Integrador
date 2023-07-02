@@ -1,0 +1,242 @@
+
+@media (max-width: 412px) {
+
+    /*formulario inicio*/
+    #Login-body {
+    width: 100vv;
+    }
+
+    .formulario {
+        width: 10rem;
+        height: 20rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+    }
+    .formulario > h1 { 
+        font-size: 150%;
+        margin-top: 1.5rem;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .password { 
+        margin-top: 1rem;
+    }
+    
+    /*PAGINA DE REGISTRO*/
+    #registro-body { 
+        width: 100vv;
+    }
+    .registro-formulario { 
+        width: 15rem;
+        height: 25rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .registro-titulo {
+        margin-bottom: 0;
+    }
+
+    .registro-form { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .registro-input { 
+        width: fit-content;
+    }
+    .username2 > label { 
+        width: fit-content;
+    }
+
+    /*ESTRUCTURA GENERAL*/
+
+    .grid-areas {
+    
+        display: grid;
+        grid-template-areas: 
+        "Header Header  Header"
+        "Hero   Hero Hero"
+        "Post   Post Post"
+        "Galeria Galeria Galeria"
+        ;
+        height: fit-content;
+        grid-template-rows: 9rem 21rem 1fr 1fr;
+    }
+   
+    #PaginaPrincipal-body{
+    height: 1500px;
+    }
+
+    /*fITI DE PERFIL+NAV*/
+
+    .FotoPerfil img {
+        top: 4rem;
+        height: 100px;
+        width: 100px;
+    }
+    .NavPagina { 
+        top: 1rem;
+        right: 1rem;
+       
+        
+    }   
+    .NavPagina-botones {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        list-style: none;
+        
+        
+    }  
+    .NavPagina-botones p > a {
+        font-size: 80%;      
+        
+        box-shadow: 0px 2.5px 2.5px black;
+    
+    }    
+    
+    .NavPagina-botones > p {
+        margin-top: 0%;
+        margin-bottom: 10px;
+       
+        
+      
+    }
+    .username {
+        top: 1rem;
+        left: 60%;
+        
+    }
+    .username h1 { 
+        font-size: 75px;
+    }
+
+ /*ABOUT US*/
+    .AboutUsinfo {
+    width: 75%;
+
+    }
+    .contenedor-mapa { 
+        border-radius: 10px;
+        border: 10px solid var(--color-fuente-blanco);
+        box-shadow: 0px 5px 5px;
+        margin-bottom: 10px;
+        height: 10rem;
+        width: 10rem;
+    }
+    .Aboutus-maps { 
+        height: 10rem;
+        width: 10rem;
+    }
+ 
+}
+@media (min-width:413px) and (max-width:1000px ){
+
+    /*FORMULARIO INICIO*/
+     
+    #Login-body {
+        width: 100vv;
+        }
+        
+    .password { 
+            margin-top: 1.5rem;
+        }
+        
+    .formulario {
+        
+            height: 22rem;
+        }
+    
+
+
+    
+
+    /*ESTRUCTURA GENERAL*/
+
+    .grid-areas {
+    
+        display: grid;
+        grid-template-areas: 
+        "Header Header  Header"
+        "Hero   Hero Hero"
+        "Post Galeria Galeria"
+        "Post  Galeria Galeria"
+        ;
+        height: fit-content;
+        grid-template-columns: 20rem 2fr 3fr;
+        grid-template-rows: 11rem 17rem 1fr 1fr;
+    }
+    .NavPagina { 
+        top: 1rem;
+        right: 1rem;
+       
+        
+    }   
+    .NavPagina-botones {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        list-style: none;
+}
+#registro-body { 
+    width: 100vv;
+}
+.registro-formulario { 
+    width: 25rem;
+    height: 30rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.registro-titulo {
+    margin-bottom: 0;
+}
+
+.registro-form { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.registro-input { 
+    width: fit-content;
+}
+.username2 > label { 
+    width: fit-content;
+}
+.password { 
+
+}
+
+/*FORMULARIO DE REGISTRO*/
+#registro-body { 
+    width: 100vv;
+}
+.registro-formulario { 
+    width: 20rem;
+    height: 25rem;
+    justify-items: center;
+}
+.registro-titulo {
+    margin-bottom: 1rem;
+}
+.registro-input { 
+    width: 15rem;
+
+}
+.Boton-enviar2 {
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+}

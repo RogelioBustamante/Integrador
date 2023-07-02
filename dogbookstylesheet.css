@@ -1,0 +1,737 @@
+/*Variables*/
+:root { 
+    --color-rojo:#c31717;
+    --colo-rojo-secundario: #dd3838;
+    --color-fuente-blanco: white;
+    --font-main: klavika;
+    --font-body: Consolas;
+}
+
+/*PAGINA LOGIN*/ 
+   
+    /*background*/
+#Login-body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background: linear-gradient(180deg, rgba(195,23,23,1) 0%, rgba(250,254,255,1) 50%);
+    height: 100vh;
+
+}
+.Seccionprincial { 
+    display: block;
+}
+
+    /*Estilos - login*/
+
+.formulario {
+    width: 25rem;
+    height: 22rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2rem;
+    background-color: var(--color-rojo);
+    border-radius: 10px;
+    text-align: center;
+    gap: 10px;
+    
+    
+}
+       
+
+
+.formulario h1 {
+    margin-top: 0%;
+    margin-bottom: 10px;
+}
+.Logoprincipal img {
+    width: 128px;
+    height: 48.1px;
+    
+}
+.formulario h1, label {
+    color: var(--color-fuente-blanco);
+}
+
+.username, .password, .registrarse { 
+    font-family: var(--font-body);
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    gap: 5px;
+        
+}
+.password { 
+    margin-top: 1rem;
+}
+
+.formulario > h1 { 
+    font-size: 300%;
+}
+
+.Boton-enviar { 
+    width: 50%;
+    height: 30px;
+    background: var(--colo-rojo-secundario) ;
+    border: none;
+    border-radius: 5px;
+    font-size: 150%;
+    font-family: var(--font-main);
+    
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+.Boton-enviar a {
+    text-decoration: none;
+    color: var(--color-fuente-blanco);
+}
+
+.formulario .registrarse a { 
+    margin-top: 10px;
+    align-content: end;
+    font-size: 80%;
+    text-decoration: none;
+}
+
+.formulario a { 
+    color: var(--color-fuente-blanco);
+}
+
+/*PAGINA PRINCIPAL*/
+    
+        /*background*/
+
+#PaginaPrincipal-body { 
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background: white;
+    height: 100vh;
+    
+}
+
+        /*ESTRUCTURA (GRID) */
+
+.grid-areas {
+    display: grid;
+    grid-template-areas: 
+    "Header Header  Header"
+    "Hero   Galeria Galeria"
+    "Post   Galeria Galeria"
+    ;
+    grid-template-columns: 2fr 3fr 3fr;
+    grid-template-rows: 11rem 21rem 1fr;
+    height: fit-content;
+    gap: 10px;
+    margin: 5px;
+
+    }
+
+    .Galeria {
+        grid-area: Galeria;
+        box-sizing: border-box;
+        
+        
+    
+    }
+
+    .Hero { 
+        grid-area: Hero;
+        
+    
+    }
+    
+    .Post {
+        grid-area: Post;
+        
+    
+    }
+
+/*HEDHER+NAVBAR*/
+
+.Header {
+    grid-area: Header;
+    border-radius: 10px;
+    background:var(--color-rojo);
+      
+    display: flex;
+    max-height: 184px;
+   
+    
+    
+}
+
+.FotoPerfil img {
+    top: 1rem;
+    left: 2rem;
+    height: 200px;
+    width: 200px;
+    border-radius: 80%;
+    border: var(--color-fuente-blanco) solid 5px;
+    gap: 10px;
+    position: absolute;
+    z-index: 1;
+    animation: drop 20s infinite;
+}
+
+
+.username { 
+    position: relative;
+    left: 50%;
+    top:-1rem;
+    transform: translateX(-50%);
+    
+    
+    
+
+}
+.username h1{
+    color: var(--color-fuente-blanco);
+    font-family: var(--font-main);
+    font-size: 100px;
+    text-shadow: 0px 05px 5px black;
+    animation: zigzag 2s;
+    
+    
+
+}
+
+.NavPagina { 
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 9rem;
+    height: 35px;
+    width: fit-content;
+    justify-content: space-between;
+    margin: 0px;
+    margin-right: 0px;
+    
+    
+}
+.NavPagina-botones {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    width: fit-content;
+
+    
+    
+}
+
+.NavPagina-botones p > a {
+    color: var(--color-fuente-blanco);
+    text-decoration: none;
+    background: var(--colo-rojo-secundario);
+    padding: 5px;
+    border-radius: 10px;
+    border:2px solid var(--color-fuente-blanco);
+    box-shadow: 0px 05px 5px black;
+}
+
+/*seccion AMIGOS*/ 
+.SeccionAmigos { 
+    
+    margin: 5px;
+    border: 5px solid var(--color-rojo);
+    border-radius: 10px;
+    
+    
+
+    
+}
+
+.Amigos{
+    color: var(--color-fuente-blanco);
+    background-color:var(--colo-rojo-secundario);
+    padding: 5px;
+    overflow-x: scroll;
+}
+
+.Amigos-titulo { 
+    display: flex;
+    justify-content: center;
+}
+      
+.Perriamigos { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:20px;
+    
+
+}
+    /*tarjeta*/
+    .AmigosCard {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        background: var(--color-rojo);
+        align-items: center;
+        border-radius: 10px;
+        color: var(--color-fuente-blanco);
+        margin-bottom: 10px;
+        
+        }
+
+        .AmigosCard a {
+            text-decoration: none;
+            color: var(--color-fuente-blanco);
+            background: var(--colo-rojo-secundario);
+            padding: 7px;
+            border-radius: 10px;
+        }
+            
+        
+
+        
+
+    .AmigosCardFoto {
+        height: 250px;
+        width: 250px;
+        background: url(./imagenes/Doby.jpg) no-repeat center/cover;
+        border-radius: 10px;
+        border: 3px solid var(--color-fuente-blanco);
+        } 
+    .AmigosCardFoto2 { 
+        height: 250px;
+        width: 250px;
+        background: url(./imagenes/Gianna.jpg) no-repeat center/cover;
+        border-radius: 10px;
+        border: 3px solid var(--color-fuente-blanco);
+
+        }   
+    .AmigosCardFoto3 { 
+        height: 250px;
+        width: 250px;
+        background: url(./imagenes/Rocky.jpg) no-repeat center/cover;
+        border-radius: 10px;
+        border: 3px solid var(--color-fuente-blanco);
+
+    }
+    .AmigosCardFoto4 { 
+        height: 250px;
+        width: 250px;
+        background: url(./imagenes/Lukas.jpg) no-repeat center/cover;
+        border-radius: 10px;
+        border: 3px solid var(--color-fuente-blanco);
+
+    }
+    .AmigosCardFoto5 { 
+        height: 250px;
+        width: 250px;
+        background: url(./imagenes/Sultan.jpg) no-repeat center/cover;
+        border-radius: 10px;
+        border: 3px solid var(--color-fuente-blanco);
+
+    }
+
+/* About us*/
+.AboutUs { 
+    
+    margin: 5px;
+}
+    
+
+    .AboutUsinfo { 
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--color-rojo);
+        width:40%;
+        padding: 10px;
+        border-radius: 10px;
+        border: 5px solid var(--colo-rojo);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--color-fuente-blanco);
+        gap: 10px;
+    }
+    .AboutUsinfo-titulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background: var(--colo-rojo-secundario);
+        border-radius: 10px 10px 0px 0px;
+        
+    }
+        
+    .contenedor-mapa { 
+        border-radius: 10px;
+        border: 10px solid var(--color-fuente-blanco);
+        box-shadow: 0px 5px 5px;
+        margin-bottom: 10px;
+        height: 15rem;
+        width: 15rem;
+       
+
+    }
+
+    .Aboutus-maps { 
+        height: 15rem;
+        width: 15rem;
+    }
+/*cerrar sesion*/
+        
+
+    .cerrarsesion-label { 
+        height: 50px;
+        width: 60px;
+        padding: 5px;
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        cursor: pointer;
+        
+    
+        
+    
+    }
+    .cerrarsesion-label img { 
+        height: 50px;
+        width: 60px;
+        border: 2.5px solid var(--color-fuente-blanco);
+        border-radius: 10px;
+    }
+    #cerraresion-toggle {
+        display: none;
+    }
+    .cerrarsesion-opciones {
+        color: var(--color-fuente-blanco);
+        font-family: var(--font-main);
+        font-size: 80%;
+        background: var(--color-rojo);
+        width: 70px;
+        padding: 5px;
+        border-radius: 10px;
+        border: 2.5px solid var(--color-fuente-blanco);
+        position: fixed;
+        bottom: 5rem;
+        right: 1rem;
+        display: none;
+        z-index: 2;
+        justify-content: center;
+        align-content: center;
+    }
+    .cerrarsesion-opciones p a {
+        text-align: center;
+        color: aliceblue;
+        text-decoration: none;
+    }
+    #cerraresion-toggle:checked + .cerrarsesion-opciones { 
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .opciones { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-bottom: 3px solid #dd3838;
+        gap: 5px;
+        
+        
+    }
+    .opciones img {
+        height: 40px;
+        width: auto;
+        border-radius: 5px;
+    }
+
+/*SECCIÓN FOTOS*/ 
+.Galeria { 
+    display: grid;
+    place-content: center;
+    grid-template-columns: 3fr  2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    
+    
+    
+}
+
+.Foto { 
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black; /*eje x, eje y desenfoque color*/
+
+}
+
+.Foto:nth-child(1) {
+    background: url(./imagenes/Foto\ 1.jpg) no-repeat center/cover; 
+    grid-column: 1/2;
+    grid-row: 1/5;
+}
+.Foto:nth-child(2) {
+    background: url(./imagenes/Foto\ 2\ .jpg) no-repeat center/cover;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    
+    
+}
+.Foto:nth-child(3) {
+    background: url(./imagenes/Foto\ 3.jpg) no-repeat center/cover;
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+.Foto:nth-child(4) {
+    background: url(./imagenes/Foto\ 4.jpg) no-repeat center/cover;
+    grid-column: 2/3;
+    grid-row: 3/5;
+    
+}
+.Foto:nth-child(5) {
+    background: url(./imagenes/Foto\ 5.jpg) no-repeat center/cover;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    
+}
+.Foto:nth-child(6) {
+    background: url(./imagenes/Foto\ 6.jpg) no-repeat center/cover;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    
+}
+.Foto:nth-child(7) {
+    background: url(./imagenes/Foto\ 7.jpg) no-repeat top/cover;
+    grid-column: 3/4;
+    grid-row: 4/5;
+    
+}
+.Foto:nth-child(8) {
+    background: url(./imagenes/Foto\ 8.jpg) no-repeat center/cover;
+    grid-column: 4/5;
+    grid-row: 4/5;
+    
+}
+
+.Foto:nth-child(9) {
+    background: url(./imagenes/Foto\ 9.jpg) no-repeat center/cover;
+    grid-column: 3/5;
+    grid-row: 3/4;
+    
+}
+
+/* SECCIÓN HERO (perfil)*/ 
+.Hero {
+    background: var(--color-rojo);
+    border-radius: 10px;
+    color: var(--color-fuente-blanco);
+    padding: 5px;
+    
+    
+}
+
+.Seccion-titulo { 
+    background-color: var(--colo-rojo-secundario);
+    border-radius: 10px 10px 0px 0px;
+    height: 50px;
+    padding: 10px;
+    box-sizing: content-box;
+}
+.Seccion-titulo > p {
+    text-align: center;
+    font-size: 150%;
+}
+
+.Hero-intereses {
+    list-style: none;
+    border-top: 1px solid var(--colo-rojo-secundario);
+}
+.Hero-intereses > li::before {
+    content: '';
+    display: inline-block;
+    width: 23.6px;
+    height: 18.8px;
+    background-image: url(./imagenes/Logos/icono\ hueso.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 10px;
+    filter: drop-shadow( 2px 2px 2px black);
+    
+}
+
+/* SECCIÓN POST*/
+.Post {
+    background: var(--color-rojo);
+    border-radius: 10px;
+    color: var(--color-fuente-blanco);
+    padding: 5px;
+}
+
+.Publicaciones { 
+    margin-top: 7.5%;
+          
+}
+
+.Publicaciones-ingresar-texto { 
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: 5px;
+    margin-bottom: 20px ;
+    
+}
+.Publicaciones-ingresar-texto input {
+    width: 100%;
+    border: none;
+}
+
+.Publicaciones-ingresar-texto > .Publicaciones-boton {
+    background: var(--colo-rojo-secundario);
+    border: none;
+    border-radius: 5px;
+    font-size: 150%;
+    font-family: var(--font-main);
+    color: var(--color-fuente-blanco);
+    cursor: pointer;
+
+}
+
+.Publicaciones-unicas {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow: auto;
+    margin-bottom: 10px;
+       
+    
+}
+
+.Publicaciones-formato {
+    color: rgb(255, 255, 255);
+    font-weight: 80;
+    background: var(--colo-rojo-secundario);
+    padding: 5px;
+    border-radius: 5px;
+    text-align: justify;
+}
+.Fecha-comentario {
+    width: 30%;
+    max-height: 15px;
+    font-size: 60%;
+   
+}
+.Comentario {
+    width: 75%;
+    font: 90%;
+}
+
+.Publicaciones-historial-1 {
+    overflow-y: scroll;
+ }
+
+
+/*FOOTER */ 
+.Footer {
+    background-color:var(--color-rojo);
+    margin: 5px;
+    height: 100px;
+    width: auto;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.Footer-info {
+    display: flex;
+    position:relative;
+    flex-direction: column;
+    width: fit-content;
+ }
+
+.Footer-info img {
+    width: 128px;
+    height: 48.1px;
+    margin-bottom: 5px;
+    
+}
+
+.Footer-info p {
+    gap: 5px;
+    width: fit-content;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 65%;
+    color: var(--color-fuente-blanco);
+    display: inline;
+}
+
+/*--PAGINA DE REGISTRO --*/
+#registro-body { 
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background: linear-gradient(180deg, rgba(195,23,23,1) 0%, rgba(250,254,255,1) 50%);
+    height: 100vh;
+}
+
+.registro-formulario {
+    width: 25rem;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2rem;
+    background-color: var(--color-rojo);
+    border-radius: 10px;
+    text-align: center;
+
+}
+.registro-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.registro-formulario h1, label {
+    color: var(--color-fuente-blanco);
+    
+}
+.registro-form {
+    position: relative;
+    width: 25rem;
+}
+
+
+.username2,.password2 { 
+    font-family: var(--font-body);
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    gap: 5px;
+    align-items: center;
+    width: 23rem;}
+
+
+.registro-input {
+    width: 20REM;
+}
+
+.Boton-enviar2 {
+    
+    width: 50%;
+    height: 30px;
+    background: var(--colo-rojo-secundario) ;
+    border: none;
+    border-radius: 5px;
+    font-size: 150%;
+    font-family: var(--font-main);
+    width: fit-content;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.Boton-enviar2 a {
+    text-decoration: none;
+    color: var(--color-fuente-blanco);
+}

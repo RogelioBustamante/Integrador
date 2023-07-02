@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogbook parina principal</title>
+    <link rel="stylesheet" href="dogbookstylesheet.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="dogbookeffectssheet.css">
+</head>
+<body id="PaginaPrincipal-body">
+    <section class="Seccionprincial">
+
+    <div class="grid-areas">
+        <div class="Header">
+            <div class="FotoPerfil">
+                <img src="./imagenes/Fotos Julio/Foto de perfil/Julio perfil.jpg" alt="Foto de perfil">
+            </div>
+            <div class="username">
+                <h1>Julio</h1>
+            </div>
+            
+            <div class="NavPagina">
+                <ul class="NavPagina-botones">
+                    <p class="hover2"><a class="hover1" href="#Amigos">Amigos</a></p>
+                    <p class="hover2"><a class="hover1" href="#AboutUs">Sobre nosotros</a></p>
+                </ul>
+            </div>
+
+               
+
+        </div> <!--Portada+Username-->
+
+        <div class="Galeria"> 
+            <div class="Foto"></div>
+            <div class="Foto"></div>
+            <div class="Foto"></div>
+            <div class="Foto"></div>
+            <div class="Foto"></div>
+            <div class="Foto"></div>
+            <div class="Foto"></div>
+            <div class="Foto"></div>
+            <div class="Foto"></div>
+
+            
+        </div><!--grid de fotos-->
+        <div class="Hero">
+            <div class="Seccion-titulo"> 
+                <p>Sobre mi</p>
+            <div class="Hero-bio">
+                <p>Soy un Schanuzer de la provincia de Córdoba, me gusta pasear y hacer travesuras.</p>
+                <div class="Hero-intereses">
+                    <p>Intereses:</p>
+                    <li>Jugar</li>
+                    <li>Comer</li>
+                    <li>Dormir en la cama de mi humano</li>
+                    <li>Romper cosas</li>
+                </div>
+
+            </div>
+            </div>
+        </div> <!--Seccion hero al costado izquierdo - perfil de usuario/info-->
+            
+        <div class="Post">
+            <div class="Seccion-titulo">
+                <p>Mis posteos</p>
+            </div>
+            <div class="Publicaciones">
+                <div class="Publicaciones-ingresar-texto">
+                    <input class="Publicaciones-escribir" type="text" id="posteo" placeholder="¿Que estas pensando?">
+                    <label for="posteo"></label>
+                    <button class="Publicaciones-boton hover2 hover1">Enviar</button>
+                </div>
+                <div class="Publicaciones-historial"> 
+                    <p> Mis publicaciones:</p>
+                    <div class="Publicaciones-historial-1">
+                        <div class="Publicaciones-unicas">
+                            <div class="Fecha-comentario Publicaciones-formato"> 01/05/2023 14:00 pm</div>
+                            <div class="Comentario Publicaciones-formato">Lorem ipsum dolor sit amet consectetur adipiscing elit ante quisque nulla sagittis lacus mattis, quis imperdiet placerat dui tempor potenti egestas lacinia integer cubilia sociosqu luctus.</div>
+                        </div>
+                        <div class="Publicaciones-unicas">
+                            <div class="Fecha-comentario Publicaciones-formato"> 02/03/2023 11:00 am</div>
+                            <div class="Comentario Publicaciones-formato">Lorem ipsum dolor sit amet consectetur adipiscing.</div>
+                        </div> 
+                </div>      
+                
+                </div>
+
+            </div>
+        </div> <!--Seccion de posteos-->
+        
+        
+        </div>
+    </section>  
+
+    <section class="SeccionAmigos">
+        <div class="Amigos" id="Amigos">
+            <div class="Amigos-titulo">
+                <h1>Mis amigos</h1>
+            </div>
+            <div class="Perriamigos">
+                <div class="AmigosCard">
+                    <h2>Doby</h2>
+                    <div class="AmigosCardFoto"></div>
+                    <div>
+                        <p class="hover2"><a class="a hover1" href="">Ver perfil</a></p>
+                    </div>
+                </div>
+                <div class="AmigosCard">
+                    <h2>Ginna</h2>
+                    <div class="AmigosCardFoto2"></div>
+                    <div>
+                        <p class="hover2"><a class="a hover1" href="">Ver perfil</a></p>
+                    </div>
+                </div>
+                <div class="AmigosCard">
+                    <h2>Rocky</h2>
+                    <div class="AmigosCardFoto3"></div>
+                    <div>
+                        <p class="hover2"><a class="a hover1" href="">Ver perfil</a></p>
+                    </div>
+                </div>
+                <div class="AmigosCard">
+                    <h2>Lukas</h2>
+                    <div class="AmigosCardFoto4"></div>
+                    <div>
+                        <p class="hover2"><a class="a hover1" href="">Ver perfil</a></p>
+                    </div>
+                </div>
+                <div class="AmigosCard">
+                    <h2>Sultan</h2>
+                    <div class="AmigosCardFoto5"></div>
+                    <div>
+                        <p class="hover2"><a class="a hover1" href="">Ver perfil</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        
+
+    </section>
+    <section class="AboutUs" id="AboutUs">
+        <div class="AboutUsinfo"> 
+            <div class="AboutUsinfo-titulo">
+                <h2>¿Que es Dogbook?</h2>
+                <p>Dogbook es la primer red social para mascotas, de Córdoba al mundo entero.</p>
+            </div>
+            <div class="contenedor-mapa">
+                <iframe class="Aboutus-maps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6807.188418306465!2d-64.14865689999999!3d-31.452836599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1688224846633!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               
+            </div>
+            
+        </div>
+
+    </section>
+    <footer class="Footer">
+        <div class="Footer-info">
+            <img src="./imagenes/Logos/logo 1.png" alt="Logo Dogbook">
+            <p>Dogbook es una marca registrada.</p>
+            <p>Todos los derechos reservados</p>
+
+        </div>
+        <!--Boton cerrar sesion-->
+        <label for="cerraresion-toggle" class="cerrarsesion-label">
+            <img class="hover1" src="./imagenes/Logos/logo 2 .png" alt="dogbook-icon">
+        </label>
+        <input type="checkbox" id="cerraresion-toggle">
+        <div class="cerrarsesion-opciones">
+            <p class="hover2"><a class="hover1" href="./index.html">Cerrar sesión</a></p>
+            
+            <div class="opciones">
+                <abbr title="Mis redes sociales"><a href=""><img class="hover1" src="./imagenes/Logos/icono - redes.png" alt=""></a></abbr>
+                <abbr title="Mis PlayList"><a href=""><img class="hover1"src="./imagenes/Logos/icono - musica.png" alt=""></a></abbr>
+                <abbr title="Mi Wishlist"><a href=""><img class="hover1"src="./imagenes/Logos/icono - wishlist.png" alt=""></a></abbr>
+                <abbr title="Conocer gente"><a class="hover1" href="https://www.google.com/maps/@-31.4015744,-64.1859584,14z?hl=es&entry=ttu" target="_blank"><img class="hover1" src="./imagenes/Logos/icono maps.png" alt=""></a></abbr>
+                <abbr title="Mensajes"><a href=""><img  class="hover1" src="./imagenes/Logos/icono - mensajes.png" alt=""></a></abbr>
+                
+            </div>
+            
+        </div>
+
+        
+    </footer>
+    
+</body>
+</html>
+
+<!--Agregar efecto a botones de este tutorial https://www.youtube.com/watch?v=-LCv2gen93A (efecto 8 ) -->
