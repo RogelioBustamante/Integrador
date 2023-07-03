@@ -8,7 +8,9 @@
 }
 
 /*PAGINA LOGIN*/ 
-   
+body {
+    background: white;
+} 
     /*background*/
 #Login-body {
     margin: 0;
